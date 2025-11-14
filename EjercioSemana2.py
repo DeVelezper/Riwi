@@ -16,10 +16,10 @@ for i in range(100):
     if i % 3 == 0 and i % 5 == 0:
         fizzBozz.append(i)
         # print("fizz bozz")
-    elif i % 3 == 0:
+    if i % 3 == 0:
         fizz.append(i)    
         # print("fizz")
-    elif i % 5 == 0:
+    if i % 5 == 0:
         bozz.append(i)
         # print("bozz")
     else:
