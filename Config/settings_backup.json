@@ -1,0 +1,89 @@
+{
+    "workbench.startupEditor": "none",
+    "database-client.autoSync": true,
+    "files.autoSave": "afterDelay",
+    "editor.linkedEditing": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.minimap.enabled": false,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.iconTheme": "symbols",
+    "editor.fontFamily": "'Liga Comic Mono', Consolas, 'Courier New', monospace",
+    "editor.mouseWheelZoom": true,
+    "workbench.sideBar.location": "right",
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.wait": 0,
+    "liveServer.settings.ignoreFiles": [
+        ".vscode/**",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.ts"
+    ],
+    "liveServer.settings.root": "",
+    
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    "chat.tools.terminal.autoApprove": {
+        "git --no-pager diff origin/Juanpvlz -- frontend/src/components/PageAdmin.jsx": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "git ls-files": true,
+        "ForEach-Object": true,
+        "$parts[-1]": true,
+        "powershell": true,
+        "ConvertTo-Json": true,
+        "contraseña='admin'": true,
+        "$r": true,
+        "try": true,
+        "%": true,
+        "password='admin'": true
+    },
+
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+
+    "github.copilot.advanced": {},
+
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "json": false,
+        "html": true,
+        "yaml": false,
+        "scss": false
+    },
+
+    // 🔧 Configuración para que Copilot ayude sin ser invasivo
+    "github.copilot.inlineSuggest.enable": true,
+    "github.copilot.inlineSuggest.autoTrigger": true,
+    "github.copilot.suggestion.showCompletions": "automatic",
+    "github.copilot.suggestion.manualTrigger": true,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.inlineSuggest.preview": false,
+    "github.copilot.chat.agent.autoFix": false,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+
+    "code-runner.executorMap": {
+        "python": "python3 -u"
+    },
+    "code-runner.runInTerminal": true
+}
