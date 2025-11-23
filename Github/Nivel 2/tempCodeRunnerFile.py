@@ -1,3 +1,0 @@
-showValueX()
-
-print(x)

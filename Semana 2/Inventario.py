@@ -38,17 +38,29 @@ Ingrese un valor correcto\n""")
     inventory.append(product)
     print(f"Producto agregado: {name}")
 
+def show_inventory():
+    # Mostrar todos los productos del inventario
+    for product in inventory:
+        subtotal = product["Price"] * product["Amount"]
+        print(f"Producto: {product["Name"]} | Precio: {product["Price"]} | Cantidad:{product["Amount"]} | Total: {subtotal}")
+    return
+
 def calculate_total():
     # Calcular el costo total del inventario
     total_cost = sum(i["Price"] * i["Amount"] for i in inventory)
     return total_cost
+
+def calculate_estatistics():
+    # Calcular la cantidad total de productos
+    return len(inventory)
 
 # Menú principal del programa
 while True:
     print("""Menu
 1. Agregar producto
 2. Mostrar resultado
-3. Salir""")
+3. Calcular estadisticas
+4. Salir""")
 
     option = input("Ingresa la opcion que quieres hacer: \n")
 
@@ -58,15 +70,18 @@ while True:
     elif option == "2":
         if inventory:
             print("Productos en el inventario\n")
-            # Mostrar cada producto con su subtotal
-            for product in inventory:
-                subtotal = product["Price"] * product["Amount"]
-                print(f"Producto: {product["Name"]} | Precio: {product["Price"]} | Cantidad:{product["Amount"]} | Total: {subtotal}")
-            print(f"Costo total de inventario: ${calculate_total():2f}")
+            show_inventory()
         else:
             print("El inventario esta vacio")
     
     elif option == "3":
+        if inventory:
+            print(f"""Costo total de inventario: ${calculate_total():.2f}           
+Esta es la cantidad total de productos: {calculate_estatistics()}""")
+        else:
+            print("El inventario esta vacio")
+
+    elif option == "4":
         break
     else:
         print(f"""Ocurrio un error: entrada invalidad.
@@ -75,5 +90,5 @@ Ingrese un valor correcto\n""")
 # RESUMEN DEL PROGRAMA:
 # Este programa gestiona un inventario de productos. Permite agregar productos
 # con su nombre, precio y cantidad, mostrar la lista completa con subtotales
-# individuales y el costo total del inventario. Valida los datos ingresados
-# y maneja errores de entrada.
+# individuales, calcular estadísticas (valor total y cantidad de productos)
+# y validar los datos ingresados manejando errores de entrada.
