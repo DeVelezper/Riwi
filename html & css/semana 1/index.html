@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de desarrollo web Juan Pablo Velez Mesa">
+    <title>Portafolio Juan Pablo Velez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" href="img/Juan Pablo Velez.jpeg">
+</head>
+<body>
+    <header>
+        <h1>Portafolio de Juan Pablo Velez Mesa</h1>
+        <button id="theme-toggle" class="theme-btn">Modo Oscuro</button>
+    </header>
+
+    <nav>
+        <a href="#sobre-mi">Sobre Mi</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="mascotas.html">Mascotas</a>
+    </nav>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mi</h2>
+        <p>
+            Soy un estudiante de Desarrollo de Software con enfoque en el desarrollo full stack. Trabajo con tecnologías modernas como HTML5, CSS3, JavaScript, React, Tailwind CSS, Node.js y Express. Manejo bases de datos SQL y MongoDB, además de herramientas como Git, GitHub y Docker. Me apasiona crear aplicaciones web funcionales, escalables y bien estructuradas, siempre aprendiendo y mejorando para ofrecer soluciones de calidad.
+        </p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <ul>
+            <li>
+                <div class="proyecto-img"></div>
+                <a href="#">Cobro de administracion Admin PG</a>
+                <p>Desarrollo de aplicativo para el cobro de administracion de una unidad residencial</p>
+            </li>
+            <li>
+                <div class="proyecto-img"></div>
+                <a href="#">E-Commerce Web App</a>
+                <p>Aplicacion web para ventas de productos</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escriba tu mensaje aqui..." required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Juan Pablo Velez - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
