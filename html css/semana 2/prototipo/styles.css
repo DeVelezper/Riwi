@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 50px 100px;
+}
+ 
+
+
+.header {
+    display: flex;
+    justify-content:  space-between;
+    align-items: center
+}
+
+.nav {
+    display: flex;
+    gap: 5rem;
+    align-items: center
+}
+
+
+.a_nav{
+    display: flex;
+    font: 1em sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+
+.caja_a_nav {
+    display: inline-block;   /* Lo convierte en caja */
+    padding: 20px 30px;      /* Espacio interno (horizontal y vertical) */
+    border: 2px solid;       /* Quita el subrayado */
+    border-radius: 15px;      /* Bordes redondeados */
+}
+
+.section_1 {
+    display: flex;
+    margin: 80px 0;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 70;
+}
+
+p {
+    letter-spacing: 2px;
+    line-height: 1.6; 
+    color: black;
+}
