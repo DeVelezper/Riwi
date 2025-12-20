@@ -22,9 +22,9 @@ if (btnFiltrar && panelFiltros) {
         panelFiltros.classList.toggle('hidden');
         
         if (!panelFiltros.classList.contains('hidden')) {
-            btnFiltrar.innerHTML = '<span class="btn-icon">✖️</span> Cerrar Filtros';
+            btnFiltrar.innerHTML = '<span class="btn-icon"></span> Cerrar Filtros';
         } else {
-            btnFiltrar.innerHTML = '<span class="btn-icon">🔍</span> Filtrar Mascotas';
+            btnFiltrar.innerHTML = '<span class="btn-icon"></span> Filtrar Mascotas';
         }
     });
 }

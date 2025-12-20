@@ -1,6 +1,4 @@
-/* ============================================
-   VARIABLES CSS - SISTEMA DE COLORES
-   ============================================ */
+/* VARIABLES CSS - SISTEMA DE COLORES */
 :root {
     /* Colores principales */
     --primary-gradient-start: #2E3192;
@@ -38,9 +36,7 @@ body.dark-mode {
     --heading-color: #ffffff;
 }
 
-/* ============================================
-   RESET Y ESTILOS BASE
-   ============================================ */
+/* RESET Y ESTILOS BASE */
 * {
     margin: 0;
     padding: 0;
@@ -61,9 +57,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ============================================
-   HEADER - ENCABEZADO
-   ============================================ */
+/* HEADER - ENCABEZADO */
 header {
     background: linear-gradient(135deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
     color: white;
@@ -108,9 +102,7 @@ header h1 {
     transform: translateY(-50%) scale(0.98);
 }
 
-/* ============================================
-   NAVEGACIÓN - ENLACES
-   ============================================ */
+/* NAVEGACIÓN - ENLACES */
 .nav-links {
     display: flex;
     justify-content: center;
@@ -150,9 +142,7 @@ header h1 {
     width: 100%;
 }
 
-/* ============================================
-   SECCIONES GENERALES
-   ============================================ */
+/* SECCIONES GENERALES */
 section {
     max-width: 1100px;
     margin: 3rem auto;
@@ -195,9 +185,7 @@ section h2::after {
     transition: left 0.3s ease, transform 0.3s ease;
 }
 
-/* ============================================
-   PERFIL - SOBRE MI
-   ============================================ */
+/* PERFIL - SOBRE MI */
 .profile-container {
     display: flex;
     align-items: center;
@@ -245,9 +233,7 @@ body.dark-mode .profile-container:hover {
     margin-top: 1rem;
 }
 
-/* ============================================
-   PROYECTOS
-   ============================================ */
+/* PROYECTOS */
 #proyectos ul {
     list-style: none;
     display: grid;
@@ -317,9 +303,7 @@ body.dark-mode .profile-container:hover {
     margin-bottom: 1.5rem;
 }
 
-/* ============================================
-   CONTACTO - FORMULARIO
-   ============================================ */
+/* CONTACTO - FORMULARIO */
 #contacto {
     max-width: 700px;
 }
@@ -401,9 +385,7 @@ button[type="submit"]:hover::before {
     left: 100%;
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 1rem 1rem;
@@ -419,9 +401,7 @@ footer p {
     opacity: 0.95;
 }
 
-/* ============================================
-   RESPONSIVE - MOBILE FIRST
-   ============================================ */
+/* RESPONSIVE - MOBILE FIRST */
 @media (max-width: 768px) {
     header {
         padding: 2rem 1rem 1rem;
@@ -492,9 +472,7 @@ footer p {
     }
 }
 
-/* ============================================
-   PÁGINA DE MASCOTAS - GALERÍA
-   ============================================ */
+/* PÁGINA DE MASCOTAS - GALERÍA */
 #intro-mascotas {
     max-width: 800px;
     text-align: center;
@@ -534,8 +512,10 @@ footer p {
     margin-bottom: 1rem;
 }
 
-.mascota-img-placeholder .emoji {
+.mascota-img-placeholder .mascotas {
     font-size: 5rem;
+    height: 100%;
+    width: 100%;
 }
 
 .mascota-card h3 {
@@ -628,10 +608,6 @@ footer p {
     transform: translateY(0);
 }
 
-.btn-icon {
-    font-size: 1.3rem;
-    display: inline-block;
-}
 
 .info-box {
     background: var(--background-color);
@@ -792,7 +768,7 @@ footer p {
         height: 150px;
     }
     
-    .mascota-img-placeholder .emoji {
+    .mascota-img-placeholder .mascotas {
         font-size: 3.5rem;
     }
 }
@@ -984,9 +960,7 @@ footer p {
     75% { transform: translateX(10px); }
 }
 
-/* ============================================
-   BOTÓN SCROLL TO TOP
-   ============================================ */
+/* BOTÓN SCROLL TO TOP */
 .scroll-top-btn {
     position: fixed;
     bottom: 2rem;

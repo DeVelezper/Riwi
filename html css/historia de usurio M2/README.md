@@ -1,19 +1,19 @@
-# 🌐 Portafolio Personal
+# Portafolio Personal
 
 Portafolio web personal desarrollado con HTML5, CSS3 y JavaScript vanilla.
 
-## 👨‍💻 Autor
+## Autor
 Juan Pablo Velez Mesa
 
-## 🚀 Características
+## Características
 
-- ✨ Diseño responsive (mobile, tablet, desktop)
-- 🌓 Modo oscuro/claro
-- 🎨 Diseño moderno con gradientes Ocean Blue
-- 📱 Compatible con todos los dispositivos
-- ⚡ Carga rápida y optimizado
+- Diseño responsive (mobile, tablet, desktop)
+- Modo oscuro/claro
+- Diseño moderno con gradientes Ocean Blue
+- Compatible con todos los dispositivos
+- Carga rápida y optimizado
 
-## 🛠️ Tecnologías
+## ecnologías
 
 - HTML5
 - CSS3 (Flexbox, Grid, Variables CSS)
@@ -21,7 +21,7 @@ Juan Pablo Velez Mesa
 - LocalStorage API
 - Intersection Observer API
 
-## 📄 Páginas
+## Páginas
 
 ### Index (Página Principal)
 - Presentación personal
@@ -33,7 +33,7 @@ Juan Pablo Velez Mesa
 - Sistema de filtrado interactivo
 - Consejos de cuidado
 
-## ⚙️ Funcionalidades JavaScript
+## Funcionalidades JavaScript
 
 - **Theme Toggle**: Cambio entre modo claro y oscuro con persistencia
 - **Modal de Bienvenida**: Mensaje personalizado que guarda el nombre del visitante
@@ -41,14 +41,14 @@ Juan Pablo Velez Mesa
 - **Scroll to Top**: Botón animado para volver al inicio
 - **Animaciones**: Efectos fade-in al hacer scroll
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 \`\`\`
 ├── index.html
 ├── mascotas.html
 ├── index-styles.css
 ├── mascotas-styles.css
-├── js/
+├── scrpts/
 │   ├── theme.js
 │   ├── welcome-modal.js
 │   ├── scroll-top.js
@@ -56,11 +56,13 @@ Juan Pablo Velez Mesa
 │   ├── profile-effect.js
 │   ├── mascotas-filter.js
 │   └── mascotas-welcome.js
-└── img/
-    └── Juan Pablo Velez.jpeg
+└── assets/
+    ├── portafolio
+    ├── mascotas
+
 \`\`\`
 
-## 🎨 Paleta de Colores
+## Paleta de Colores
 
 - Primary: \`#2E3192\` (Ocean Blue)
 - Secondary: \`#1BFFFF\` (Cyan)
@@ -73,7 +75,7 @@ Juan Pablo Velez Mesa
 - **Tablet**: ≤768px (2 columnas)
 - **Mobile**: ≤480px (1 columna)
 
-## 📦 Instalación y Uso
+## Instalación y Uso
 
 1. Clona el repositorio
 2. Abre \`index.html\` en tu navegador
@@ -83,10 +85,10 @@ O usa un servidor local:
 python -m http.server 8000
 \`\`\`
 
-## 📝 Licencia
+##  Licencia
 
 Este proyecto es de uso educativo.
 
 ---
 
-⭐ Si te gusta este proyecto, no olvides darle una estrella!
+Si te gusta este proyecto, no olvides darle una estrella!

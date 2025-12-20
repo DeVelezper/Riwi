@@ -1,5 +1,20 @@
 // Modal de bienvenida
 window.addEventListener('load', () => {
+    // Verificar si venimos de otra página del mismo sitio (navegación interna)
+    const vieneDeNavegacion = sessionStorage.getItem('navegandoEnSitio');
+    
+    console.log('Viene de navegación interna:', vieneDeNavegacion);
+    
+    // Si venimos de navegación interna, no mostrar el modal
+    if (vieneDeNavegacion === 'true') {
+        console.log('Modal no se mostrará porque vienes de otra página del sitio');
+        // Resetear el flag para la próxima recarga
+        sessionStorage.removeItem('navegandoEnSitio');
+        return;
+    }
+    
+    console.log('Mostrando modal de bienvenida');
+    
     setTimeout(() => {
         // Crear modal de bienvenida estilizado
         const modalBienvenida = document.createElement('div');
@@ -29,6 +44,8 @@ window.addEventListener('load', () => {
             setTimeout(() => modalBienvenida.remove(), 500);
             
             if (nombre) {
+                // Guardar nombre en localStorage para usarlo en otras páginas
+                localStorage.setItem('nombreVisitante', nombre);
                 mostrarMensajePersonalizado(nombre);
             }
         };
@@ -60,11 +77,30 @@ window.addEventListener('load', () => {
     }, 800);
 });
 
+// Marcar que estamos navegando internamente cuando se hace clic en links internos
+document.addEventListener('DOMContentLoaded', () => {
+    // Detectar todos los enlaces internos de tu sitio
+    document.querySelectorAll('a[href]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            
+            // Verificar si es un enlace interno (no externo, no mailto, no tel, etc.)
+            if (href && 
+                !href.startsWith('http') && 
+                !href.startsWith('mailto:') && 
+                !href.startsWith('tel:') &&
+                !href.startsWith('#')) {
+                
+                // Marcar que estamos navegando internamente
+                sessionStorage.setItem('navegandoEnSitio', 'true');
+                console.log('Navegación interna detectada hacia:', href);
+            }
+        });
+    });
+});
+
 // Mostrar mensaje personalizado flotante
 function mostrarMensajePersonalizado(nombre) {
-    // Guardar nombre en localStorage para usarlo en otras páginas
-    localStorage.setItem('nombreVisitante', nombre);
-    
     const mensaje = document.createElement('div');
     mensaje.className = 'mensaje-personalizado';
     mensaje.innerHTML = `
@@ -83,5 +119,5 @@ function mostrarMensajePersonalizado(nombre) {
     setTimeout(() => {
         mensaje.classList.remove('visible');
         setTimeout(() => mensaje.remove(), 500);
-    }, 4000);
+    }, 2000);
 }
