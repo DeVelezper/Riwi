@@ -77,18 +77,13 @@ Juan Pablo Velez Mesa
 
 ## Instalación y Uso
 
-1. Clona el repositorio
+1. Clona el repositorio: https://github.com/Develezper/User-module-two-stories.git
 2. Abre \`index.html\` en tu navegador
 
-O usa un servidor local:
-\`\`\`bash
-python -m http.server 8000
-\`\`\`
 
 ##  Licencia
 
 Este proyecto es de uso educativo.
 
----
 
 Si te gusta este proyecto, no olvides darle una estrella!
