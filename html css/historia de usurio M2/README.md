@@ -69,7 +69,7 @@ Juan Pablo Velez Mesa
 - Gradientes dinámicos
 - Modo oscuro adaptativos
 
-## 📱 Responsive Design
+##  Responsive Design
 
 - **Desktop**: >768px (layout completo)
 - **Tablet**: ≤768px (2 columnas)
