@@ -1,0 +1,63 @@
+# Carpetas de proyecto
+David/
+
+# Dependencias
+node_modules/
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDEs y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración local
+.env
+.env.local
+config.local.json
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Caché
+.cache/
+*.tmp
+
+# Archivos generados
+dist/
+build/
+.next/
+out/
+
+# Pruebas
+coverage/
+.nyc_output/
+
+# Binarios
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Otros
+.git/
+.gitkeep
